@@ -1,24 +1,34 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    justify-content: center;
-    display: flex;
-    background-color: black;
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.inputButtonContainer {
+  margin-bottom: 10px; 
+}
+
+#taskInput {
+  padding: 5px;
+  font-size: 14px;
+}
+
 #addTaskButton {
-    margin-left: 1rem;
-    padding: 0.5rem 2rem;
+  padding: 6px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 1rem;
 }
-input{
-    padding: 0.5rem 10rem;
+#addTaskButton:hover {
+  background-color: #ddd;
+  transform: scale(1.1);
 }
-button{
-    padding: 5px 10px;
-    border-radius: 12rem;
-}
-button:hover{
-    background-color: lightblue;
-    cursor: pointer;
-    transition: 0.3s;
-    transform: scale(1.1);
+
+#taskList {
+  list-style-type: disc;   
+  padding-left: 20px;      
+  margin: 0;               
 }
