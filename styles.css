@@ -32,3 +32,14 @@ body {
   padding-left: 20px;      
   margin: 0;               
 }
+
+li.task.completed .text { 
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+i.task { display: flex; gap: 8px; align-items: center; }
+li.task .completeBtn, li.task .deleteBtn { cursor: pointer; border-radius: 0.5rem; padding: 2px 6px; }
+li.task .completeBtn { border: 1px solid #0a0; }
+li.task .deleteBtn { border: 1px solid #a00; }
+
